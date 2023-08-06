@@ -1,105 +1,94 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
-    background-color: aqua;
+
+body {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    margin-top: 3%;
-    padding-left:18%;
+    justify-content: center;
+    align-items: center;
 }
-form{
+
+form {
+    width: 60%;
+    display: flex;
     border-radius: 10px;
-    display: flex;
+    border: 1px solid rgb(180, 177, 177);
 }
-.form-info{
-    background-color: rgb(35, 156, 204);
+
+.form-logo {
     width: 40%;
-    height: 90vh;;
 }
-.form-register{
-    background-color: white;
-    width: 40%;
-    height: 90vh;
+
+.form-register {
+    width: 60%;
 }
-.form-info>h1{
+
+.form-logo {
+    background: rgb(25, 25, 236);
     color: white;
-    margin-top: 12%;
-    padding-left: 8%;
-}
-.form-register>h1{
-    color: rgb(35, 156, 204);
-    margin-top: 12%;
-    padding-left: 8%;
-}
-.form-register>button{
-    color: white;
-}
-p{
-    color: white;
-}
-span{
-    font-weight: bold;
-}
-.form-info>p{
-    width: 90%;
-    margin-top: 8%;
-    padding-left: 8%;
-}
-.form-info>button{
-    background-color: white;
-    width: 34%;
-    height: 7vh;
-    border-radius: 4px 0 4px 0;
-    margin-top: 8%;
-    margin-left: 8%;
-    font-weight: bold;
-    border: none;
-}
-.username , .user-password{
-    height: 10vh;
-    display: flex;
-    margin-top: 4%;
-    padding-left: 5%;
-}
-.user-comfirm-pw{
-    padding-left: 8%;
-}
-.user-email{
-    width: 87%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px 0px 0px 10px;
+
 }
-.term-condition > p{
-    color: black;
-    font-weight: bold;
+
+.form-register {
     display: flex;
+    flex-direction: column;
+    padding: 25px;
 }
-.term-condition{
+
+h2 {
+    padding: 20px;
+    color: rgb(6, 170, 170);
     display: flex;
-    margin-top: 4%;
-    padding-left: 5%;
-    margin-bottom: 8%;
+    justify-content: center;
 }
-button{
-    background-color: rgb(16, 148, 200);
-    width: 25%;
-    height: 6vh;
-    border-radius:5px 0 5px 0;
+
+#username,
+#example,
+#confirm-pw,
+#password {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    background: none;
     border: none;
-    margin-left: 4%;
+    border-bottom: 1px solid rgb(128, 125, 125);
 }
-.term-condition>p{
-    margin-top: 4%;
-    padding-left: 5%;
+
+.check {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
 }
-input{
-    height: 6vh;
-    margin-top: 2%;
+
+button {
+    padding: 5px;
+    margin: 10px 10px 20px 90px;
+    border-radius: 20px;
+    width: 50%;
+    border: 2px solid rgb(6, 158, 158);
 }
-.username{
-    margin-top: 6%;
-    margin-bottom: 6%;
+
+.form-register p,
+.check {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.form-register p {
+    margin: 10px;
+}
+
+.form-register input:focus {
+    outline: 1px;
 }
